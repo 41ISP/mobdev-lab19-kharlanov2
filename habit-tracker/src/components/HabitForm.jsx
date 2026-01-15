@@ -1,4 +1,4 @@
-const HabitForm = () => {
+const HabitForm = ({form, handleFormChange}) => {
     return (
         <div className="add-habit-section">
             <h2>➕ Add New Habit</h2>
@@ -7,16 +7,20 @@ const HabitForm = () => {
                     <label for="habit-name">Habit Name</label>
                     <input
                         type="text"
+                        value={form.habitName}
                         id="habit-name"
                         name="habitName"
                         placeholder="e.g., Morning Exercise"
-                        value="" />
+                         />
                 </div>
 
                 <div className="form-row">
                     <div className="form-group">
                         <label for="frequency">Frequency</label>
-                        <select id="frequency" name="frequency">
+                        <select 
+                        id="frequency"
+                        name="frequency"
+                        value={form.frequency}>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="weekdays">Weekdays</option>
@@ -32,7 +36,7 @@ const HabitForm = () => {
                             type="time"
                             name="notificationTime"
                             id="notification-time"
-                            value="07:00" />
+                            value={form.notificationTime} />
                     </div>
                 </div>
 
