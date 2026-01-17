@@ -23,7 +23,7 @@ const initialHabits = [
         frequency: "weekly",
         streak: 100,
         isToday: false,
-        color: "red"
+        color: "red",
     }
 ]
 const Main = () => {
@@ -53,7 +53,8 @@ const Main = () => {
             frequency: form.frequency,
             streak: 0,
             isToday: false,
-            color: "red"
+            color: "red",
+            startDate: new Date()
         }
         setHabits((val) => [...val, newHabit])
     }
