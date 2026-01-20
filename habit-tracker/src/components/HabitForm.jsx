@@ -5,10 +5,10 @@ const HabitForm = ({ form, handleFormChange, handleFormSubmit }) => {
     }
 
     return (
-        <div className="add-habit-section">
+        <div classNameName="add-habit-section">
             <h2>➕ Add New Habit</h2>
-            <form onSubmit={handleSubmit} className="form-grid">
-                <div className="form-group">
+            <form onSubmit={handleSubmit} classNameName="form-grid">
+                <div classNameName="form-group">
                     <label for="habit-name">Habit Name</label>
                     <input
                         onChange={handleFormChange}
@@ -20,8 +20,8 @@ const HabitForm = ({ form, handleFormChange, handleFormSubmit }) => {
                     />
                 </div>
 
-                <div className="form-row">
-                    <div className="form-group">
+                <div classNameName="form-row">
+                    <div classNameName="form-group">
                         <label for="frequency">Frequency</label>
                         <select
                             id="frequency"
@@ -36,7 +36,7 @@ const HabitForm = ({ form, handleFormChange, handleFormSubmit }) => {
                         </select>
                     </div>
 
-                    <div className="form-group">
+                    <div classNameName="form-group">
                         <label for="notification-time">
                             Notification Time
                         </label>
@@ -49,30 +49,30 @@ const HabitForm = ({ form, handleFormChange, handleFormSubmit }) => {
                     </div>
                 </div>
 
-                <div className="form-group">
+                <div classNameName="form-group">
                     <label>Color Theme</label>
-                    <div className="color-picker">
+                    <div classNameName="color-picker">
                         <div
                         ></div>
                         <div
-                            className="color-option"
+                            classNameName="color-option"
                         ></div>
                         <div
-                            className="color-option"
+                            classNameName="color-option"
                         ></div>
                         <div
-                            className="color-option"
+                            classNameName="color-option"
                         ></div>
                         <div
-                            className="color-option"
+                            classNameName="color-option"
                         ></div>
                         <div
-                            className="color-option"
+                            classNameName="color-option"
                         ></div>
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" classNameName="btn btn-primary">
                     Add Habit
                 </button>
             </form>

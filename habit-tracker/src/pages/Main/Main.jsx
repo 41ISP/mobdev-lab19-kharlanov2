@@ -77,10 +77,10 @@ const Main = () => {
         setObject("habits", habits)
     }, [habits])
     return (
-        <div className="container">
+        <div classNameName="container">
             <header>
                 <h1>🎯 Smart Habit Tracker</h1>
-                <p className="subtitle">Build better habits, one day at a time</p>
+                <p classNameName="subtitle">Build better habits, one day at a time</p>
             </header>
 
             <Stats habits={habits} />
@@ -91,7 +91,7 @@ const Main = () => {
                 handleFormSubmit={handleFormSubmit}
             />
 
-            <div className="habits-section">
+            <div classNameName="habits-section">
                 <h2>📋 Today's Habits</h2>
 
                 {habits
